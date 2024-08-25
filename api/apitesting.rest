@@ -1,0 +1,103 @@
+Get  http://localhost:5000/api/alldata
+
+
+//User Add
+###
+POST   http://localhost:5000/api/addrecord
+Content-Type: application/json
+
+{
+    "Username":"Gourav Jaat",
+    "email":"Gourav@222$$gmail.com"
+}
+
+###
+//Update data
+PUT http://localhost:5000/api/dataupdate/66a331de051c9f79b59f132a
+Content-Type: application/json
+
+{
+    "Username":"Rahul Kumar",
+    "email":"Rahul@222$$gmail.com"
+}
+
+//Delete Data
+###
+DELETE   http://localhost:5000/api/datadelete/66b66ac0efc3ce6b08d56f0a
+
+
+// Registation
+###
+POST   http://localhost:5000/api/reg
+Content-Type: application/json
+
+{
+    "username":"Rahul rao",
+    "password":"123"
+}
+
+//Login Check
+###
+POST   http://localhost:5000/api/logincheck
+Content-Type: application/json
+
+{
+    "username":"Lokesh",
+    "password":"123"
+}
+
+//reset password
+###
+POST    http://localhost:5000/api/updatepassword
+Content-Type: application/json
+
+{
+    "username":"Lokesh",
+    "oldPassword":"123",
+   "newPassword" : "123",
+  "confirmPassword": "123"
+}
+
+###
+//All Message
+GET http://localhost:5000/api/messages
+
+###
+//Add Message
+POST http://localhost:5000/api/messages/add
+Content-Type: application/json
+
+{
+    "message":"Sunil Kumar"
+}
+
+###
+DELETE http://localhost:5000/api/messages/66a33d28051c9f79b59f1384
+
+###
+//Number
+POST http://localhost:5000/api/adddigit
+Content-Type: application/json
+
+{
+  "digit": 44
+}
+
+###
+GET http://localhost:5000/api/getdigits
+
+###
+DELETE  http://localhost:5000/api/deletedigit/66a348e950edb3033390cfa1
+
+###
+//All Digit
+DELETE  http://localhost:5000/api/deletealldigits
+
+###
+//Update Digit
+PUT http://localhost:5000/api/updatedigit/66a34b195ae3db642d154bfd
+Content-Type: application/json
+
+{
+  "digit": 65
+}
